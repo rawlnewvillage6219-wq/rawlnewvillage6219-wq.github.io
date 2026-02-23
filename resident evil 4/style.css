@@ -1,0 +1,67 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: red;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+dl dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dl dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
