@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Tax Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: ghostwhite;
+    }
+    label, input, button {
+      display: block;
+      margin: 10px 0;
+    }
+    input[disabled] {
+      background-color: ghostwhite;
+    }
+  </style>
+</head>
+<body>
+  <h2>Sales Tax Calculator</h2>
+  
+  <label for="purchaseAmount">Purchase Amount ($):</label>
+  <input type="number" id="purchaseAmount" placeholder="Enter amount" step="0.01" min="0">
+
+  <button onclick="calculateTax()">Calculate Tax</button>
+
+  <label for="taxAmount">Tax Amount ($):</label>
+  <input type="text" id="taxAmount" disabled>
+
+  <label for="totalAmount">Total ($):</label>
+  <input type="text" id="totalAmount" disabled>
+
+  <script>
+    const TAX_RATE = 0.0825; // 8.25%
+
+    function calculateTax() {
+      const purchaseInput = document.getElementById('purchaseAmount').value;
+      const purchaseAmount = parseFloat(purchaseInput);
+
+      if (isNaN(purchaseAmount) || purchaseAmount < 0) {
+        alert('Please enter a valid purchase amount.');
+        return;
+      }
+
+      const tax = purchaseAmount * TAX_RATE;
+      const total = purchaseAmount + tax;
+
+      document.getElementById('taxAmount').value = tax.toFixed(2);
+      document.getElementById('totalAmount').value = total.toFixed(2);
+    }
+  </script>
+</body>
+</html>
