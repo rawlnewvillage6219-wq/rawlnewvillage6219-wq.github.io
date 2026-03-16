@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Anime Knowledge Quiz</h1>
+
+    <form id="quizForm">
+
+        <div class="question">
+            <p>1. Who is the main character of Naruto?</p>
+            <label><input type="radio" name="q1" value="Sasuke Uchiha"> Sasuke Uchiha</label><br>
+            <label><input type="radio" name="q1" value="Naruto Uzumaki"> Naruto Uzumaki</label><br>
+            <label><input type="radio" name="q1" value="Kakashi Hatake"> Kakashi Hatake</label><br>
+            <label><input type="radio" name="q1" value="Itachi Uchiha"> Itachi Uchiha</label>
+            <p id="result1"></p>
+        </div>
+
+        <div class="question">
+            <p>2. Which anime features Levi Ackermann?</p>
+            <label><input type="radio" name="q2" value="Bleach"> Bleach</label><br>
+            <label><input type="radio" name="q2" value="One Punch Man"> One Punch Man</label><br>
+            <label><input type="radio" name="q2" value="Dragon Ball"> Dragon Ball</label><br>
+            <label><input type="radio" name="q2" value="Attack on Titan"> Attack on Titan</label>
+            <p id="result2"></p>
+        </div>
+
+        <div class="question">
+            <p>3. Which of the following are members of the Akatsuki? (Select all that apply)</p>
+            <label><input type="checkbox" name="q3" value="Pain"> Pain</label><br>
+            <label><input type="checkbox" name="q3" value="Itachi"> Itachi</label><br>
+            <label><input type="checkbox" name="q3" value="Goku"> Goku</label><br>
+            <label><input type="checkbox" name="q3" value="Kisame"> Kisame</label>
+            <p id="result3"></p>
+        </div>
+
+        <div class="question">
+            <p>4. In which anime does Satoru Gojo appear? (Select all that apply)</p>
+            <label><input type="checkbox" name="q4" value="Jujutsu Kaisen"> Jujutsu Kaisen</label><br>
+            <label><input type="checkbox" name="q4" value="Solo Leveling"> Solo Leveling</label><br>
+            <label><input type="checkbox" name="q4" value="Demon Slayer"> Demon Slayer</label><br>
+            <label><input type="checkbox" name="q4" value="Jujutsu Kaisen Zero"> Jujutsu Kaisen Zero</label>
+            <p id="result4"></p>
+        </div>
+
+        <button type="button" onclick="checkQuiz()">Submit Quiz</button>
+        <h2 id="score"></h2>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

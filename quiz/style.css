@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    padding: 40px;
+}
+
+.container {
+    background-color: white;
+    padding: 25px;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.question {
+    margin-bottom: 25px;
+}
+
+.question p {
+    font-weight: bold;
+}
+
+label {
+    cursor: pointer;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+#result1, #result2, #result3, #result4, #score {
+    font-weight: bold;
+    margin-top: 10px;
+}
