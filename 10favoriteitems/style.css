@@ -1,0 +1,21 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: ghostwhite;
+    padding: 20px;
+}
+
+h1 {
+    color: black;
+}
+
+ul {
+    background: ghostwhite;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+li {
+    margin: 8px 0;
+    font-size: 18px;
+}
