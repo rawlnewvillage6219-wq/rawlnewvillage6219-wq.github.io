@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iron Crew | Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadFavoriteProgram()">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand font-weight-bold" href="index.html">IRON CREW</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="workouts.html">Workouts</a></li>
+        <li class="nav-item"><a class="nav-link" href="nutrition.html">Nutrition</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="jumbotron jumbotron-fluid text-white hero-section mb-0">
+    <div class="container text-center">
+      <h1 class="display-4 font-weight-bold">BUILD POWER. NO EXCUSES.</h1>
+      <p class="lead">Strength training, discipline, and results.</p>
+      <a href="programs.html" class="btn btn-warning btn-lg mt-2">Start Training</a>
+    </div>
+  </header>
+
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Strength training">
+          <div class="card-body">
+            <h3 class="card-title">Strength Training</h3>
+            <p class="card-text">Build total-body strength with heavy compound and accessory work.</p>
+            <a href="programs.html" class="btn btn-dark">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Conditioning">
+          <div class="card-body">
+            <h3 class="card-title">Conditioning</h3>
+            <p class="card-text">Improve endurance, athleticism, and work capacity for real performance.</p>
+            <a href="programs.html" class="btn btn-dark">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Arm power">
+          <div class="card-body">
+            <h3 class="card-title">Arm Power</h3>
+            <p class="card-text">Train grip, arms, and upper-body power to stand out in strength and presence.</p>
+            <a href="workouts.html" class="btn btn-dark">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Why Choose Iron Crew?</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>What We Offer</h4>
+          <ul>
+            <li>Beginner-friendly plans</li>
+            <li>Strength-focused workouts</li>
+            <li>Nutrition guidance</li>
+            <li>Consistent weekly structure</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>How to Get Started</h4>
+          <ol>
+            <li>Choose a training program</li>
+            <li>Follow the workout schedule</li>
+            <li>Track your progress</li>
+            <li>Stay consistent and recover well</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5 text-center">
+    <h2>Favorite Program</h2>
+    <p>Select your favorite program and we will remember it using session storage.</p>
+
+    <select id="favoriteProgram" class="form-control w-50 mx-auto mb-3">
+      <option value="">Choose a program</option>
+      <option value="Strength Training">Strength Training</option>
+      <option value="Conditioning">Conditioning</option>
+      <option value="Arm Power">Arm Power</option>
+    </select>
+
+    <button class="btn btn-warning" onclick="saveFavoriteProgram()">Save Favorite</button>
+    <p class="mt-3 font-weight-bold" id="savedMessage"></p>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 Iron Crew | <a href="contact.html" class="text-warning">Contact Us</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

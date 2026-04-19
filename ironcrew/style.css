@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.page-banner {
+  background-color: #111;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+.btn-warning {
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
